@@ -16,6 +16,7 @@ class ThemQuanTriVienSeeder extends Seeder
                 'ten_dang_nhap' => 'vanchien',
                 'mat_khau' => bcrypt('12345'),
                 'ho_ten' =>'chien',
+                'anh_dai_dien' => 'a.jpg'
             ],
         ];
         DB::table('quan_tri_vien')->insert($data);

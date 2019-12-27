@@ -21,7 +21,7 @@ class CreateLichSuMuaCreditsTable extends Migration
             $table->bigInteger('so_tien');
             $table->timestamps();
             $table->softDeletes();
-            
+            $table->foreign('goi_credit_id')->references('id')->on('goi_credit');
             $table->foreign('nguoi_choi_id')->references('id')->on('nguoi_choi');
         });
     }
