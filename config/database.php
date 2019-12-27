@@ -1,5 +1,5 @@
 <?php
-
+use Illuminate\Support\Str;
 // $url = parse_url(getenv("DATABASE_URL"));
 // $host = $url['host']?? null;
 // $username = $url['user']?? null;
