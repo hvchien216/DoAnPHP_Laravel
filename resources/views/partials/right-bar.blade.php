@@ -14,13 +14,13 @@
                 <a href="javascript:void(0);" class="user-edit"><i class="mdi mdi-pencil"></i></a>
             </div>
     
-            <h5><a href="javascript: void(0);">Marcia J. Melia</a> </h5>
-            <p class="text-muted mb-0"><small>Product Owner</small></p>
+            <h5><a href="javascript: void(0);">{{Auth::user()->ho_ten}}</a> </h5>
+            <p class="text-muted mb-0"><small>Admin</small></p>
         </div>
 
         <!-- Settings -->
         <hr class="mt-0" />
-        <div class="row">
+        <div class="row">~
             <div class="col-6 text-center">
                 <h4 class="mb-1 mt-0">8,504</h4>
                 <p class="m-0">Balance</p>

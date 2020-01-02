@@ -118,5 +118,24 @@
         </script>  
               
         @endif
+        <script>
+            $(document).ready(function () {
+							$('.logout').click(function () {
+								Swal.fire({
+									title: 'Bạn có muốn đăng xuất không?',
+									type: 'question',
+									showCancelButton: true,
+									confirmButtonColor: '#3085d6',
+									cancelButtonColor: '#d33',
+									confirmButtonText: 'Có',
+									cancelButtonText: 'Không'
+								}).then((result) => {
+									if (result.value) {
+										window.location.href = "{{route('dang-xuat')}}";
+									}
+								});
+							});
+						});
+        </script>
     </body>
 </html>

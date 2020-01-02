@@ -10,57 +10,58 @@
         <!-- App favicon -->
        
 		<link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" type="text/css" href="{{ asset('assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css')}}">
-        <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/main.css')}}">
+        <link href="{{ asset('assets/css/icons.min.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('assets/css/app.min.css') }}" rel="stylesheet" type="text/css" />
 		<link href="{{ asset('assets/libs/sweetalert2/sweetalert2.min.css') }}" rel="stylesheet" type="text/css" />
 		
 	</head>
 
-    <body >
-        <div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100">
-				<!-- <div class="login100-pic js-tilt" data-tilt>
-					<img src="{{ asset('assets/images/img-01.png')}}" alt="IMG">
-				</div> -->
-                
-				<form action="{{route('xu-ly-dang-nhap')}}" method="POST" class="login100-form validate-form">
-					@csrf
-                    <span class="login100-form-title">
-						Admin Login
-					</span>
-					@if(count($errors)>0)
+    <body class="authentication-bg authentication-bg-pattern" style="background-color:black">
+	<div class="account-pages mt-5 mb-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-lg-6 col-xl-5">
+                        <div class="card">
+						
+                            <div class="card-body p-4">
+							<h5 class="auth-title">Sign In</h5>
+
+							<form action="{{route('xu-ly-dang-nhap')}}" method="POST">
+							@csrf
+								@if(count($errors)>0)
                                 <div class="alert alert-danger" id="thong_bao_3s">
 									<ul>
                                         <li>{{$errors->first()}}</li>
 									</ul>
                                 </div> 
-                	@endif
-					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100" type="text" name="ten_dang_nhap" id="ten_dang_nhap" placeholder="Tên đăng nhập">
-						<span class="focus-input100"></span>
-						<span class="symbol-input100">
-							<i class="fa fa-user" aria-hidden="true"></i>
-						</span>
-					</div>
+                				@endif
+                                    <div class="form-group mb-3">
+                                        <label for="emailaddress">Username</label>
+										<input class="form-control" type="text" name="ten_dang_nhap" id="ten_dang_nhap" placeholder="Enter your username">
+									</div>
 
-					<div class="wrap-input100 validate-input" data-validate = "Password is required">
-						<input class="input100" type="password" name="mat_khau" id="mat_khau" placeholder="Mật khẩu">
-						<span class="focus-input100"></span>
-						<span class="symbol-input100">
-							<i class="fa fa-lock" aria-hidden="true"></i>
-						</span>
-					</div>
-					
-					<div class="container-login100-form-btn">
-						<button type="submit" class="login100-form-btn">
-							Login
-						</button>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
+                                    <div class="form-group mb-3">
+                                        <label for="password">Password</label>
+										<input class="form-control" type="password" name="mat_khau" id="mat_khau" placeholder="Enter your password">
+									</div>
+
+                                    <div class="form-group mb-0 text-center">
+                                        <button class="btn btn-danger btn-block" type="submit"> Log In </button>
+                                    </div>
+
+                                </form>
+
+                            </div> <!-- end card-body -->
+                        </div>
+                        <!-- end card -->
+
+                    </div> <!-- end col -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end page -->
 				@if (session('thongbao'))     
                 <script typpe="text/javascript">
                     function sessionn(){
@@ -70,8 +71,7 @@
                         showConfirmButton:!1,
                         timer:2000})}
                 </script>
-                @endif
-                @yield('main-content')
+                @endif                
 
 	<script src="{{ asset('assets/js/vendor.min.js') }}"></script>
 	<script src="{{ asset('assets/js/app.min.js') }}"></script>

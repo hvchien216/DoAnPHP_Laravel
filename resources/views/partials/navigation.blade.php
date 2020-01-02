@@ -160,10 +160,10 @@
                                 <div class="dropdown-divider"></div>
 
                                 <!-- item-->
-                                <a href="{{route('dang-xuat')}}" class="dropdown-item notify-item">
+                                <button class="dropdown-item notify-item logout" >
                                     <i class="fe-log-out"></i>
                                     <span>Logout</span>
-                                </a>
+                                </button>
 
                             </div>
                         </li>
