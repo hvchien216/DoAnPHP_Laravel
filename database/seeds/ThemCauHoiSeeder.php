@@ -11,7 +11,7 @@ class ThemCauHoiSeeder extends Seeder
      */
     public function run()
     {
-        App\NguoiChoi::create([
+        App\CauHoi::create([
             'noi_dung' => 'Giải Grand Slam đầu tiên trong năm là giải nào?',
             'linh_vuc_id' => '1',
             'phuong_an_a' => 'Austrlia mở rộng',
@@ -21,7 +21,7 @@ class ThemCauHoiSeeder extends Seeder
             'dap_an' => 'A',
         ]);
 
-        App\NguoiChoi::create([
+        App\CauHoi::create([
             'noi_dung' => 'Cùng với Hà Nội T&T (vô địch V-League 2010), CLB nào của Việt Nam tham dự AFC Cup 2011?',
             'linh_vuc_id' => '1',
             'phuong_an_a' => 'Sông Lam Nghệ An',
@@ -31,7 +31,7 @@ class ThemCauHoiSeeder extends Seeder
             'dap_an' => 'A',
         ]);
 
-        App\NguoiChoi::create([
+        App\CauHoi::create([
             'noi_dung' => 'AFC Asian Cup 2011 được tổ chức tại quốc gia nào?',
             'linh_vuc_id' => '1',
             'phuong_an_a' => 'Qatar',
@@ -41,7 +41,7 @@ class ThemCauHoiSeeder extends Seeder
             'dap_an' => 'A',
         ]);
 
-        App\NguoiChoi::create([
+        App\CauHoi::create([
             'noi_dung' => 'Đội nào lên ngôi vô địch AFC Asian Cup 2011 tổ chức tại Qatar?',
             'linh_vuc_id' => '1',
             'phuong_an_a' => 'Nhật Bản',
@@ -51,7 +51,7 @@ class ThemCauHoiSeeder extends Seeder
             'dap_an' => 'A',
         ]);
 
-        App\NguoiChoi::create([
+        App\CauHoi::create([
             'noi_dung' => 'Việt Nam lần đầu tiên vô địch AFF Cup là vào năm nào?',
             'linh_vuc_id' => '1',
             'phuong_an_a' => '2004',
@@ -61,7 +61,7 @@ class ThemCauHoiSeeder extends Seeder
             'dap_an' => 'A',
         ]);
 
-        App\NguoiChoi::create([
+        App\CauHoi::create([
             'noi_dung' => 'Đại Ngu là quốc hiệu của triều đại nào?',
             'linh_vuc_id' => '2',
             'phuong_an_a' => 'Triều Ngô',
@@ -71,7 +71,7 @@ class ThemCauHoiSeeder extends Seeder
             'dap_an' => 'A',
         ]);
 
-        App\NguoiChoi::create([
+        App\CauHoi::create([
             'noi_dung' => 'Các vua Hùng đặt quốc hiệu nước ta là gì?',
             'linh_vuc_id' => '2',
             'phuong_an_a' => 'Văn Lang',
@@ -81,7 +81,7 @@ class ThemCauHoiSeeder extends Seeder
             'dap_an' => 'A',
         ]);
 
-        App\NguoiChoi::create([
+        App\CauHoi::create([
             'noi_dung' => 'An Dương Vương đặt quốc hiệu nước ta là gì?',
             'linh_vuc_id' => '2',
             'phuong_an_a' => 'Âu Lạc',
@@ -91,7 +91,7 @@ class ThemCauHoiSeeder extends Seeder
             'dap_an' => 'A',
         ]);
 
-        App\NguoiChoi::create([
+        App\CauHoi::create([
             'noi_dung' => 'Năm 1010, Lý Thái Tổ đã cho xây dựng điện nào ở trung tâm hoàng thành Thăng Long?',
             'linh_vuc_id' => '2',
             'phuong_an_a' => 'Điện Kính Thiên',
@@ -101,7 +101,7 @@ class ThemCauHoiSeeder extends Seeder
             'dap_an' => 'A',
         ]);
 
-        App\NguoiChoi::create([
+        App\CauHoi::create([
             'noi_dung' => 'Thành cổ Sơn Tây do vị vua nào xây dựng nên vào năm 1822?',
             'linh_vuc_id' => '2',
             'phuong_an_a' => 'Gia Long',
@@ -111,7 +111,7 @@ class ThemCauHoiSeeder extends Seeder
             'dap_an' => 'A',
         ]);
 
-        App\NguoiChoi::create([
+        App\CauHoi::create([
             'noi_dung' => 'Ai là nhạc sĩ Việt Nam đầu tiên viết opera với tác phẩm “Cô sao” và sau đó là “Người tạc tượng”?',
             'linh_vuc_id' => '3',
             'phuong_an_a' => 'Đỗ Nhuận',
@@ -121,7 +121,7 @@ class ThemCauHoiSeeder extends Seeder
             'dap_an' => 'A',
         ]);
 
-        App\NguoiChoi::create([
+        App\CauHoi::create([
             'noi_dung' => 'The ASEAN WAY-ca khúc chính thức của ASEAN là sáng tác của nhạc sĩ người nước nào?',
             'linh_vuc_id' => '3',
             'phuong_an_a' => 'Thái Lan',
@@ -131,7 +131,7 @@ class ThemCauHoiSeeder extends Seeder
             'dap_an' => 'A',
         ]);
 
-        App\NguoiChoi::create([
+        App\CauHoi::create([
             'noi_dung' => 'Bộ phim “The Social Network” về mạng xã hội nào đã đạt giải Quả cầu vàng 2011?',
             'linh_vuc_id' => '3',
             'phuong_an_a' => 'Facebook',
@@ -140,7 +140,7 @@ class ThemCauHoiSeeder extends Seeder
             'phuong_an_d' => 'Opera',            
             'dap_an' => 'A',
         ]);
-        App\NguoiChoi::create([
+        App\CauHoi::create([
             'noi_dung' => '“Mùa con ong đi lấy mật, mùa con voi xuống sông hút nước, mùa em đi phát rẫy làm nương, anh vào rừng đặt bẫy cài chông” là những câu hát nói về tháng nào?',
             'linh_vuc_id' => '3',
             'phuong_an_a' => 'Tháng Giêng',
@@ -149,7 +149,7 @@ class ThemCauHoiSeeder extends Seeder
             'phuong_an_d' => 'Tháng tư',            
             'dap_an' => 'A',
         ]);
-        App\NguoiChoi::create([
+        App\CauHoi::create([
             'noi_dung' => 'Lã Thanh Huyền đã tham gia bộ phim nào sau đây?',
             'linh_vuc_id' => '3',
             'phuong_an_a' => 'Nhà có nhiều cửa sổ',
@@ -159,7 +159,7 @@ class ThemCauHoiSeeder extends Seeder
             'dap_an' => 'A',
         ]);
 
-        App\NguoiChoi::create([
+        App\CauHoi::create([
             'noi_dung' => 'Sông Bến Hải và sông Thạch Hãn nằm ở tỉnh nào?',
             'linh_vuc_id' => ' 4',
             'phuong_an_a' => 'Quảng Bình',
@@ -169,7 +169,7 @@ class ThemCauHoiSeeder extends Seeder
             'dap_an' => 'A',
         ]);
 
-        App\NguoiChoi::create([
+        App\CauHoi::create([
             'noi_dung' => 'Trong các cây cầu sau, cầu nào là cầu xoay?',
             'linh_vuc_id' => '4',
             'phuong_an_a' => 'Cầu Thanh Trì',
@@ -179,7 +179,7 @@ class ThemCauHoiSeeder extends Seeder
             'dap_an' => 'A',
         ]);
 
-        App\NguoiChoi::create([
+        App\CauHoi::create([
             'noi_dung' => 'Bùi Hữu Nghĩa, một trong bốn rồng vàng của vùng Đồng Nai xưa (tức là toàn Nam Bộ ngày nay) là tài năng ở lĩnh vực nào?',
             'linh_vuc_id' => '4',
             'phuong_an_a' => 'Hoạ',
@@ -188,7 +188,7 @@ class ThemCauHoiSeeder extends Seeder
             'phuong_an_d' => 'Thi',            
             'dap_an' => 'A',
         ]);
-        App\NguoiChoi::create([
+        App\CauHoi::create([
             'noi_dung' => 'Nước nào ở khu vực Đông Nam Á không có địa giới với bất kỳ nước khác?',
             'linh_vuc_id' => '4',
             'phuong_an_a' => 'Philippines',
@@ -197,7 +197,7 @@ class ThemCauHoiSeeder extends Seeder
             'phuong_an_d' => 'Thái Lan',            
             'dap_an' => 'A',
         ]);
-        App\NguoiChoi::create([
+        App\CauHoi::create([
             'noi_dung' => 'Thung lũng nổi tiếng ở Mỹ với ngành công nghệ thông tin được đặt tên theo nguyên tố nào?',
             'linh_vuc_id' => '4',
             'phuong_an_a' => 'Sắt',
@@ -206,7 +206,7 @@ class ThemCauHoiSeeder extends Seeder
             'phuong_an_d' => 'Uran',            
             'dap_an' => 'A',
         ]);
-        App\NguoiChoi::create([
+        App\CauHoi::create([
             'noi_dung' => '"Điêu tàn" là tập thơ đầu tiên của nhà thơ nào?',
             'linh_vuc_id' => '5',
             'phuong_an_a' => 'Anh Thơ',
@@ -215,7 +215,7 @@ class ThemCauHoiSeeder extends Seeder
             'phuong_an_d' => 'Chế Lan Viên',            
             'dap_an' => 'A',
         ]);
-        App\NguoiChoi::create([
+        App\CauHoi::create([
             'noi_dung' => 'Điền từ còn thiếu trong câu thành ngữ:’”…. Không cứu được …gần”.',
             'linh_vuc_id' => '5',
             'phuong_an_a' => 'Lính-Tướng',
@@ -224,7 +224,7 @@ class ThemCauHoiSeeder extends Seeder
             'phuong_an_d' => 'Chó-Mèo',            
             'dap_an' => 'A',
         ]);
-        App\NguoiChoi::create([
+        App\CauHoi::create([
             'noi_dung' => ': Truyện “Vợ chồng A Phủ” trong tập truyện Tây Bắc của nhà văn Tô Hoài viết về người dân tộc nào?',
             'linh_vuc_id' => '5',
             'phuong_an_a' => 'Vân Kiều',
@@ -233,7 +233,7 @@ class ThemCauHoiSeeder extends Seeder
             'phuong_an_d' => 'Tày',            
             'dap_an' => 'A',
         ]);
-        App\NguoiChoi::create([
+        App\CauHoi::create([
             'noi_dung' => 'Tác phẩm "Thuỷ hử" của Thi Nại Am diễn ra vào triều đại nào của Trung Quốc?  ',
             'linh_vuc_id' => '5',
             'phuong_an_a' => 'Triều Tống',
@@ -242,7 +242,7 @@ class ThemCauHoiSeeder extends Seeder
             'phuong_an_d' => 'Triều Thanh ',            
             'dap_an' => 'A',
         ]);
-        App\NguoiChoi::create([
+        App\CauHoi::create([
             'noi_dung' => 'Truyền kỳ mạn lục, một tác phẩm được đánh giá là " thiên cổ kỳ bút", là "áng văn hay của bậc đại gia", là sáng tác của ai?',
             'linh_vuc_id' => '5',
             'phuong_an_a' => 'Nguyễn Trãi',
@@ -251,7 +251,7 @@ class ThemCauHoiSeeder extends Seeder
             'phuong_an_d' => 'Nguyễn Du',            
             'dap_an' => 'A',
         ]);
-        // App\NguoiChoi::create([
+        // App\CauHoi::create([
         //     'noi_dung' => '',
         //     'linh_vuc_id' => '6',
         //     'phuong_an_a' => '',
@@ -261,7 +261,7 @@ class ThemCauHoiSeeder extends Seeder
         //     'dap_an' => 'A',
         // ]);
 
-        // App\NguoiChoi::create([
+        // App\CauHoi::create([
         //     'noi_dung' => '',
         //     'linh_vuc_id' => '7',
         //     'phuong_an_a' => '',
@@ -271,7 +271,7 @@ class ThemCauHoiSeeder extends Seeder
         //     'dap_an' => 'A',
         // ]);
 
-        // App\NguoiChoi::create([
+        // App\CauHoi::create([
         //     'noi_dung' => '',
         //     'linh_vuc_id' => '8',
         //     'phuong_an_a' => '',
