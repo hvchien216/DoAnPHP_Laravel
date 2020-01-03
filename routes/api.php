@@ -13,7 +13,7 @@ use Illuminate\Http\Request;
 |
 */
 
-// Route::middleware(['assign.guard:api','jwt.auth'])->group(function(){
+ Route::middleware(['assign.guard:api','jwt.auth'])->group(function(){
 	Route::get('linh-vuc','API\LinhVucController@layDanhSach');
 	Route::get('cau-hoi','API\CauHoiController@layCauHoi');
 	Route::get('bang-xep-hang','API\BangXepHangController@layDanhSach');
@@ -23,7 +23,7 @@ use Illuminate\Http\Request;
 	Route::post('mua-credit','API\MuaCreditController@muaCredit');
 	Route::put('cap-nhat-tai-khoan','API\CapNhatTaiKhoanController@capNhat');
 	Route::post('luu-luot-choi','API\LuuLuotChoiController@luuLuotChoi');
-// });
+});
 
 
 Route::post('dang-nhap','API\DangNhapController@dangNhap');
