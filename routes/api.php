@@ -13,32 +13,19 @@ use Illuminate\Http\Request;
 |
 */
 
-// Route::middleware('auth:api')->get('/user', function (Request $request) {
-//     return $request->user();
-// });
-
-// Route::group([
-//     'middleware'=>'api',
-//     'namespace'=>'App\Http\Controllers',
-//     'prefix'=>'auth'],
-//     function($router)
-//     {
-//         Route::post('login','AuthController@login');
-//         Route::post('logout','AuthController@logout');
-//         Route::post('refresh','AuthController@refresh');
-//         Route::post('me','AuthController@me');
-//     }
-
-// );
-
-// Route::middleware('auth:api')->get('/user',function (Request $request){
-//     return $request->user();
-// });
+Route::middleware(['assign.guard:api','jwt.auth'])->group(function(){
+	Route::get('linh-vuc','API\LinhVucController@layDanhSach');
+	Route::get('cau-hoi','API\CauHoiController@layCauHoi');
+	Route::get('bang-xep-hang','API\BangXepHangController@layDanhSach');
+	Route::get('lay-thong-tin','API\DangNhapController@layThongTin');
+	Route::get('lich-su-choi','API\LichSuChoiController@lichSuChoi');
+	Route::get('goi-credit','API\DanhSachCreditController@goiCredit');
+	Route::post('mua-credit','API\MuaCreditController@muaCredit');
+	Route::put('cap-nhat-tai-khoan','API\CapNhatTaiKhoanController@capNhat');
+	Route::post('luu-luot-choi','API\LuuLuotChoiController@luuLuotChoi');
+});
 
 
-Route::get('linh-vuc','API\LinhVucController@layDanhSach');
-Route::get('cau-hoi','API\CauHoiController@layCauHoi');
-Route::get('nguoi-choi','API\NguoiChoiController@layDanhSach');
-
-Route::post('dang-nhap','API\LoginConTroller@dangNhap');
-Route::post('lay-thong-tin','API\LoginConTroller@layThongTin');
+Route::post('dang-nhap','API\DangNhapController@dangNhap');
+Route::post('quen-mat-khau','API\SendMailController@send');
+Route::post('dang-ky','API\DangKyController@dangKy');
