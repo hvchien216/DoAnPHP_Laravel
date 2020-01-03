@@ -9,8 +9,8 @@
  * file that was distributed with this source code.
  */
 
-return [
-
+return [ 
+//á
     /*
     |--------------------------------------------------------------------------
     | JWT Authentication Secret
