@@ -64,6 +64,6 @@ class Handler extends ExceptionHandler
         {
             return response()->json(['error'=>'Token not provided']);
         }
-        return parent::render($request, $exception);
+        return parent::render($request, $exception);//abc
     }
 }
