@@ -14,7 +14,7 @@ class NguoiChoi extends Authenticatable implements JWTSubject
     public function getPasswordAttribute(){
         return $this->mat_khau;
     }
-
+    protected $hidden = ['mat_khau'];
 
     //override methods of JWTSubject
     public function getJWTIdentifier(){

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\LinhVuc;
 use App\Http\Requests\LinhVucRequest;
 use App\Http\Requests\UpdateLinhVucRequest;
+use App\CauHoi;
 class LinhVucController extends Controller
 {
     public function index()
@@ -45,6 +46,7 @@ class LinhVucController extends Controller
     public function destroy($id)
     {
         $linhVuc = LinhVuc::find($id);
+        $cauHoi = CauHoi::where('linh_vuc_id',$id)->delete();
         $linhVuc->delete();
 
         return redirect()->route('linh-vuc.danh-sach')->with('thongbao','Xóa lĩnh vực thành công');
